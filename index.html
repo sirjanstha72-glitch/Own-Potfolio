@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Srijan Shrestha — Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">Srijan Shrestha</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="role">Graphic designer</p>
+        <h1>Srijan<br>Shrestha</h1>
+        <p class="lead">I design brands, posters and packaging with a clear idea and a fresh green point of view.</p>
+        <a class="btn" href="#work">See my work</a>
+        <ul class="swatches" aria-label="Brand colors">
+          <li style="background:#14352A;color:#F3F7EC">#14352A</li>
+          <li style="background:#2F7D4F;color:#F3F7EC">#2F7D4F</li>
+          <li style="background:#8ED081">#8ED081</li>
+          <li style="background:#D8EFC0">#D8EFC0</li>
+        </ul>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-glow" aria-hidden="true"></div>
+        <img src="images/sneha (3 of 5).jpg" alt="Portrait of Srijan Shrestha" class="hero-photo">
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <h2>Selected work</h2>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="featured" class="featured">
+     <h2>Featured work</h2>
+      <div id="featuredList"></div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About me</h2>
+      <img src="images/me.jpg" alt="Photo of me" class="me">
+      <p>I'm a graphic designer who turns rough ideas into visual identities people remember. I work on logos, posters, packaging and social media, and I like projects where color and type do the talking.</p>
+      <p>Tools I use: Photoshop, Illustrator.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's work together</h2>
+      <form id="form" novalidate>
+        <label>Name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Message <textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+        <p id="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Srijan Shrestha. All rights reserved.</footer>
+
+  <dialog id="modal">
+    <button class="close" id="close" aria-label="Close">✕</button>
+    <div class="art big" id="mArt"></div>
+    <h3 id="mTitle"></h3>
+    <p class="meta" id="mMeta"></p>
+    <p id="mDesc"></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
